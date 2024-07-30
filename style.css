@@ -1,122 +1,56 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-    font-style:normal;
-
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header h1 {
-    text-align: center;
-    margin: 0;
-}
-
-nav ul {
-    display: flex;
+body{
+    margin:0;
+    display:flex;
     justify-content: center;
-    padding: 0;
-    list-style: none;
-}
+    align-items: center;
+    height: 100vh;
+    background-color:white;
 
-nav ul li {
-    margin: 0 15px;
 }
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color:black;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
 }
-
-.section {
-    padding: 50px 0;
-    text-align: center;
-    color: darkgreen;
+#display{
+    width:100%;
+    padding:20px;
+    font-size:5rem;
+    text-align:left;
+    border:none;
+    background-color:grey;
 }
-
-.section:nth-of-type(odd) {
-    background: #f4f4f4;
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
 }
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color:blue;
-}
-
-.column {
-    flex: 1;
-    min-width: 200px;
-    margin: 15px;
-    text-align: left;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-form .row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-form .column {
-    flex: 1;
-    min-width: 200px;
-    margin: 15px 0;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
     border: none;
-    border-radius: 5px;
+    background-color:hsl(0,0%,20%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
     cursor: pointer;
 }
-
-form button:hover {
-    background: #555;
+button:hover{
+    background-color: aqua;
+}
+button:active{
+    background-color:aqua
+}
+.operator-btn{
+    background-color:aqua;
+}
+.operator-btn:active{
+    background-color:aqua;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
+
+ 
